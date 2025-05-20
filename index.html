@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora IMC</title>
+</head>
+
+<body>
+  <h3 class="h1">🌱 Vive Saludable</h3>
+  <section class="form_bmi">
+    <div class="container">
+      <h1 class="bmi-title">Calculadora IMC</h1>
+      <div class="input-group">
+        <label for="weight">Peso (kg)</label>
+        <input type="number" id="weight" placeholder="Ej: 70">
+      </div>
+      <div class="input-group">
+        <label for="height">Estatura (cm)</label>
+        <input type="number" id="height" placeholder="Ej: 170">
+      </div>
+      <button onclick="calculateBMI()">Calcular IMC</button>
+      <p id="result">Tu IMC aparecerá aquí</p>
+    </div>
+    
+
+    <div class="container_imc">
+      <div class="list_line griss">
+        <span>BMI</span>
+        <span>Status</span>
+      </div>
+
+      <div class="list_line brown">
+        <span>Bajo 18.5</span>
+        <span>Bajo Peso</span>
+      </div>
+
+      <div class="list_line green">
+        <span>Entre 18.5 - 24.9</span>
+        <span>Peso Ideal</span>
+      </div>
+
+      <div class="list_line blue_ligth">
+        <span>Entre 25 - 29.9</span>
+        <span>Sobre Peso</span>
+      </div>
+
+      <div class="list_line orange">
+        <span>Entre 30 - 39.9</span>
+        <span>Obesidad</span>
+      </div>
+
+      <div class="list_line red">
+        <span>40+</span>
+        <span>Obesidad Extrema</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="healthy-footer">
+    <p>Realizado Por Marco León Para mi clan de  🐷🐷🐷🐷</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
